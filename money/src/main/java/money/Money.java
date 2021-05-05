@@ -13,7 +13,7 @@ abstract public class Money {
          && getClass().equals(money.getClass());
     }
     static Money dollar(int amount){
-        return new Dollar(amount);
+        return new Dollar(amount, "USD");
     }
     static Money franc(int amount){
         return new Franc(amount, "CHF");
