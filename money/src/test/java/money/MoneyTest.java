@@ -15,6 +15,15 @@ public class MoneyTest {
     }
 
     @Test
+    public void testPlusReturnsSum(){
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
+        Sum sum = (Sum) result;
+        assertEquals(five, sum.augend);
+        assertEquals(five, sum.augend);    
+    }
+
+    @Test
     public void testMultiplication(){
         Money five = Money.dollar(5);
         assertEquals(Money.dollar(10), five.times(2));
