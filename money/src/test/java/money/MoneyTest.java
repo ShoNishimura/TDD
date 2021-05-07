@@ -5,6 +5,10 @@ import static org.junit.Assert.*;
 
 public class MoneyTest {
 
+    @Test
+    public void testIdentityRate(){
+        assertEquals(1, new Bank().rate("USD", "USD"));
+    }
     @Test 
     public void testReduceMoneyDifferentCurrency(){
         Bank bank = new Bank();
