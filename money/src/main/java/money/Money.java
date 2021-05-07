@@ -17,6 +17,7 @@ class Money implements Expression {
     String currency(){
         return currency;
     }
+    
     public boolean equals(Object object){
         Money money =(Money) object;
         return amount == money.amount
